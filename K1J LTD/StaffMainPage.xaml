@@ -1,0 +1,24 @@
+﻿<Window x:Class="K1J_LTD.StaffMainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:K1J_LTD"
+        mc:Ignorable="d"
+        Title="StaffMainPage" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Staff  Page" VerticalAlignment="Top"/>
+        <Button Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="743,8,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
+        <TextBlock Name="txtWelcome" HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Welcome " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="202,165,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="360,165,0,0" TextWrapping="Wrap" Text="Product" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="523,165,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
+        <TextBlock Name="txtQTY" HorizontalAlignment="Left" Margin="360,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <ComboBox Name="cmbCategory" HorizontalAlignment="Left" Margin="167,186,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbCategoryChanged"/>
+        <ComboBox Name="cmbProduct" HorizontalAlignment="Left" Margin="325,186,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="getQTY"/>
+        <Button Name="btnAddToTable" Content="Add to table" HorizontalAlignment="Left" Margin="641,186,0,0" VerticalAlignment="Top" Click="btnAddToTable_Click"/>
+        <TextBox Name="txtbAmount" HorizontalAlignment="Left" Margin="484,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewKeyDown="NumericOnly"/>
+        <DataGrid Name="DgrProducts" Margin="144,268,278,44" AlternationCount="2" RowBackground="White" AlternatingRowBackground="LightGray"/>
+    </Grid>
+</Window>

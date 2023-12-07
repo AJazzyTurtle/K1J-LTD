@@ -1,0 +1,18 @@
+﻿<Window x:Class="K1J_LTD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:K1J_LTD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Rectangle StrokeThickness="2" Width="400" Height="250" Stroke="Black" Fill="#FFAED87D"/>
+        <TextBlock HorizontalAlignment="Left" Margin="349,156,0,0" TextWrapping="Wrap" Text="Login" FontSize="25" TextDecorations="Underline" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox Name="txtEmail" Margin="0,198,0,0" HorizontalAlignment="Center" TextWrapping="NoWrap" Text="Email" VerticalAlignment="Top" Width="120" GotFocus="Clear" LostFocus="add"/>
+        <TextBox Name="txtPassword" Margin="0,221,0,0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120" GotFocus="Clear" />
+        <PasswordBox Name="pswPassword" Margin="0,221,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Visibility="Hidden" LostFocus="add"/>
+        <Button Name="btnLogin" Content="Log in" HorizontalAlignment="Left" Margin="342,244,0,0" VerticalAlignment="Top" Width="40" Click="btnLogin_Click"/>
+        <Button Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="400,244,0,0" VerticalAlignment="Top" Click="btnRegister_Click"/>
+    </Grid>
+</Window>

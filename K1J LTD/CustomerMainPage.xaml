@@ -1,0 +1,27 @@
+﻿<Window x:Class="K1J_LTD.CustomerMainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:K1J_LTD"
+        mc:Ignorable="d"
+        Title="CustomerMainPage" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Customer Page" VerticalAlignment="Top"/>
+        <Button Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="707,11,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="202,165,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="360,165,0,0" TextWrapping="Wrap" Text="Product" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="523,165,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
+        <TextBlock Name="txtPrice" HorizontalAlignment="Left" Margin="327,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock Name="txtWelcome" HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" Text="Welcome " VerticalAlignment="Top"/>
+        <StackPanel Name="stcBasket" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox Name="cmbCategory" HorizontalAlignment="Left" Margin="167,186,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="createProducts"/>
+        <ComboBox Name="cmbProduct" HorizontalAlignment="Left" Margin="325,186,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="getPrice"/>
+        <Slider Name="sldQTY" HorizontalAlignment="Left" Margin="484,190,0,0" VerticalAlignment="Top" Width="120" TickPlacement="BottomRight" AutoToolTipPlacement="BottomRight" TickFrequency="1" Maximum="10" Minimum="1" Foreground="Black" IsSnapToTickEnabled="True"/>
+        <Button Name="btnAddToOrder" Content="Add to Order" HorizontalAlignment="Left" Margin="630,192,0,0" VerticalAlignment="Top" Click="btnAddToOrder_Click"/>
+        <TextBlock Name="txtTotalPrice" HorizontalAlignment="Left" Margin="311,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button Name="btnPlaceOrder" Content="Place order" HorizontalAlignment="Left" Margin="635,236,0,0" VerticalAlignment="Top" Background="#FF36CA46" Visibility="Hidden" Click="btnPlaceOrder_Click"/>
+
+    </Grid>
+</Window>
